@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-ZA">
+<html lang="en-ZA" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -41,6 +41,7 @@
 <link rel="preload" as="image" href="assets/img/hero.webp" media="(min-width: 901px)" fetchpriority="high">
 <link rel="preload" as="image" href="assets/img/hero-mobile.webp" media="(max-width: 900px)" fetchpriority="high">
 <link rel="stylesheet" href="assets/css/site.css">
+<script>document.documentElement.classList.replace("no-js","js")</script>
 
 <script type="application/ld+json">
 {
@@ -103,8 +104,8 @@
     <picture class="hero-media">
       <source media="(max-width: 900px)" type="image/webp" srcset="assets/img/hero-mobile.webp">
       <source media="(max-width: 900px)" srcset="assets/img/hero-mobile.jpg">
-      <source type="image/webp" srcset="assets/img/hero-md.webp 1400w, assets/img/hero.webp 2400w" sizes="100vw">
-      <img src="assets/img/hero.jpg" alt="" width="2400" height="1350" fetchpriority="high" decoding="async">
+      <source type="image/webp" srcset="assets/img/hero-md.webp 1536w, assets/img/hero.webp 2560w" sizes="100vw">
+      <img src="assets/img/hero.jpg" alt="" width="2560" height="1440" fetchpriority="high" decoding="async">
     </picture>
     <div class="wrap">
       <div class="hero-copy">
@@ -124,11 +125,11 @@
 
   <section class="sec" aria-label="Why Revéla">
     <div class="wrap statement">
-      <blockquote>
+      <blockquote data-reveal>
         <p>Hair loss can affect your confidence, your identity and how you see yourself. But there are real, natural-looking solutions.</p>
         <footer>Jeanné Smith, founder of Revéla</footer>
       </blockquote>
-      <div class="truths">
+      <div class="truths" data-reveal style="--i:2">
         <div><strong>100% human hair</strong><p>Cut, coloured, curled and washed just like your own.</p></div>
         <div><strong>Pain-free, non-surgical</strong><p>No surgery and no waiting. You leave with the result on the day.</p></div>
         <div><strong>Made for you</strong><p>Colour, density and fit matched to you, with greys blended in when needed.</p></div>
@@ -139,7 +140,8 @@
   <section class="sec" id="solutions" aria-labelledby="sol-title" style="padding-top:0">
     <div class="wrap">
       <div class="sol-head">
-        <h2 id="sol-title">Every head of hair is different.</h2>
+        <h2 data-reveal id="sol-title">Every head of hair is different.</h2>
+        <span class="rule" aria-hidden="true"></span>
         <p class="lede">So every solution is customised. Here is what Jeanné offers, and who each option suits.</p>
       </div>
 
@@ -202,12 +204,12 @@
   <section class="sec band" id="results" aria-labelledby="tf-title">
     <div class="wrap">
       <div class="tf-head">
-        <h2 id="tf-title">Real clients. Real results.</h2>
+        <h2 data-reveal id="tf-title">Real clients. Real results.</h2>
         <p class="lede">Drag the handle to compare. Every transformation below was done in the salon by Jeanné.</p>
       </div>
       <div class="tf">
         <div>
-          <div class="compare big">
+          <div class="compare big" data-reveal="img">
             <picture><source type="image/webp" srcset="assets/img/ba-front-before.webp"><img src="assets/img/ba-front-before.jpg" alt="Client before her topper fitting, with fine, thinning hair pulled back" width="543" height="699" loading="lazy"></picture>
             <picture class="after"><source type="image/webp" srcset="assets/img/ba-front-after.webp"><img src="assets/img/ba-front-after.jpg" alt="The same client after, with a full, wavy blonde bob" width="543" height="699" loading="lazy"></picture>
             <span class="handle" aria-hidden="true"></span>
@@ -218,7 +220,7 @@
         </div>
         <div class="tf-side">
           <div>
-            <div class="compare mid">
+            <div class="compare mid" data-reveal="img" style="--i:2">
               <picture><source type="image/webp" srcset="assets/img/ba-back-before.webp"><img src="assets/img/ba-back-before.jpg" alt="Thinning crown before, with scalp visible" width="543" height="699" loading="lazy"></picture>
               <picture class="after"><source type="image/webp" srcset="assets/img/ba-back-after.webp"><img src="assets/img/ba-back-after.jpg" alt="The crown after, fully covered with soft blonde waves" width="542" height="699" loading="lazy"></picture>
               <span class="handle" aria-hidden="true"></span>
@@ -230,21 +232,21 @@
         </div>
       </div>
       <div class="pairs">
-        <div class="pair">
+        <div class="pair" data-reveal="img">
           <figure>
             <picture><source type="image/webp" srcset="assets/img/ba-man-before.webp"><img src="assets/img/ba-man-before.jpg" alt="Man with a thinning crown, before" width="191" height="268" loading="lazy"></picture>
             <picture><source type="image/webp" srcset="assets/img/ba-man-after.webp"><img src="assets/img/ba-man-after.jpg" alt="The same man after, with full, textured hair" width="194" height="268" loading="lazy"></picture>
           </figure>
           <p><strong>Hair replacement for men</strong>Hair loss has no age limit. A system blended and styled to match him.</p>
         </div>
-        <div class="pair">
+        <div class="pair" data-reveal="img">
           <figure>
             <picture><source type="image/webp" srcset="assets/img/ba-wig-before.webp"><img src="assets/img/ba-wig-before.jpg" alt="Woman with complete hair loss, before" width="191" height="259" loading="lazy"></picture>
             <picture><source type="image/webp" srcset="assets/img/ba-wig-after.webp"><img src="assets/img/ba-wig-after.jpg" alt="The same woman after, smiling with a dark, voluminous bob" width="194" height="259" loading="lazy"></picture>
           </figure>
           <p><strong>Medical hair loss</strong>From complete hair loss to a soft, voluminous bob made for her.</p>
         </div>
-        <div class="pair">
+        <div class="pair" data-reveal="img">
           <figure>
             <picture><source type="image/webp" srcset="assets/img/ba-long-before.webp"><img src="assets/img/ba-long-before.jpg" alt="Woman with very thin hair on top, before" width="191" height="298" loading="lazy"></picture>
             <picture><source type="image/webp" srcset="assets/img/ba-long-after.webp"><img src="assets/img/ba-long-after.jpg" alt="The same woman after, with long auburn waves" width="161" height="298" loading="lazy"></picture>
@@ -258,7 +260,7 @@
   <section class="sec" aria-labelledby="sys-title">
     <div class="wrap band-in">
       <div>
-        <h2 id="sys-title">Already have a hair system? You're welcome here.</h2>
+        <h2 data-reveal id="sys-title">Already have a hair system? You're welcome here.</h2>
         <p class="lede">You don't have to buy your system from Revéla to enjoy professional care. Men and women, new pieces or old favourites that need some TLC.</p>
       </div>
       <ul class="checks">
@@ -274,18 +276,19 @@
 
   <section class="sec band" id="jeanne" aria-labelledby="about-title">
     <div class="wrap about">
-      <figure class="about-portrait">
+      <figure class="about-portrait" data-reveal="img">
         <picture><source type="image/webp" srcset="assets/img/jeanne.webp"><img src="assets/img/jeanne.jpg" alt="Portrait of Jeanné Smith, founder of Revéla" width="1066" height="1072" loading="lazy"></picture>
         <figcaption>Jeanné Smith, hair loss specialist and stylist</figcaption>
       </figure>
       <div class="about-copy">
-        <h2 id="about-title">Meet Jeanné.</h2>
+        <h2 data-reveal id="about-title">Meet Jeanné.</h2>
+        <span class="rule" aria-hidden="true" style="margin:-8px 0 28px"></span>
         <p class="big">“The reason I love what I do is that I get to give back what hair loss slowly took away: confidence, a sense of self, and the freedom to feel beautiful again.”</p>
         <p>Jeanné Smith founded Revéla, a hair salon and hair loss clinic in Faerie Glen, Pretoria East. She specialises in hair replacement systems, medical wigs, toppers, mesh integration and extensions, and her work with a client's real story has been featured on TV.</p>
         <p>She is also a colourist and stylist at heart, from balayage and root melts to bold blues and wedding updos. Other hair loss suppliers trust her with fitting and styling for their own clients, and she travels to Cape Town on selected dates for private consultations.</p>
         <p>Whether you need an instant cosmetic solution, a longer-term approach or both, she will find what works for you. No matter your age or stage of hair loss, you deserve to feel confident again.</p>
         <p class="sign">Jeanné</p>
-        <figure class="about-team">
+        <figure class="about-team" data-reveal="img">
           <picture><source type="image/webp" srcset="assets/img/team.webp"><img src="assets/img/team.jpg" alt="The Revéla team dressed in black, gathered in the salon" width="1800" height="1085" loading="lazy"></picture>
           <figcaption>The Revéla family. Hair, colour, nails, lashes, waxing, skincare, makeup, lymphatic drainage and slimming treatments, all under one roof.</figcaption>
         </figure>
@@ -295,8 +298,8 @@
 
   <section class="sec" aria-labelledby="how-title">
     <div class="wrap">
-      <h2 id="how-title">How your consultation works</h2>
-      <ol class="steps">
+      <h2 data-reveal id="how-title">How your consultation works</h2>
+      <ol class="steps" data-reveal style="--i:1">
         <li><h3>Talk privately</h3><p>A confidential chat about your hair loss, your lifestyle and how you want to feel. No pressure.</p></li>
         <li><h3>Match it to you</h3><p>Colour, density, base and length chosen for you, including a touch of grey if that's what looks natural.</p></li>
         <li><h3>Fit and style</h3><p>Pain-free application with instant results, then cut and styled so it looks like your own hair.</p></li>
@@ -307,12 +310,12 @@
 
   <section class="sec band" aria-labelledby="grow-title">
     <div class="wrap grow">
-      <div class="grow-visual">
+      <div class="grow-visual" data-reveal="img">
         <picture><source type="image/webp" srcset="assets/img/seaier.webp"><img class="v1" src="assets/img/seaier.jpg" alt="Jeanné beside the Seaier haircare display in the salon" width="1100" height="1467" loading="lazy"></picture>
         <picture><source type="image/webp" srcset="assets/img/follicure.webp"><img class="v2" src="assets/img/follicure.jpg" alt="Follicure AHK-Cu serum, disinfectant spray and derma roller" width="613" height="796" loading="lazy"></picture>
       </div>
       <div class="grow-copy">
-        <h2 id="grow-title">Support your own hair while you wear yours.</h2>
+        <h2 data-reveal id="grow-title">Support your own hair while you wear yours.</h2>
         <p class="lede">Your hair system gives you instant confidence. These help your natural hair from the scalp up.</p>
         <div class="prod">
           <div class="prod-top"><h3>Follicure starter kit</h3><span class="price">R899</span></div>
@@ -335,7 +338,7 @@
     <div class="wrap">
       <div class="rev-head">
         <div>
-          <h2 id="rev-title">What clients say</h2>
+          <h2 data-reveal id="rev-title">What clients say</h2>
           <div class="rec" style="margin-top:16px"><b>100%</b><span>recommend Revéla on Facebook<br>from 7 reviews</span></div>
         </div>
         <div class="rev-nav">
@@ -356,8 +359,8 @@
 
   <section class="sec band" aria-labelledby="salon-title">
     <div class="wrap">
-      <h2 id="salon-title" style="max-width:18ch">A full salon, not only a clinic.</h2>
-      <div class="salon-grid">
+      <h2 id="salon-title" data-reveal style="max-width:18ch">A full salon, not only a clinic.</h2>
+      <div class="salon-grid" data-reveal="img">
         <figure class="g1"><picture><source type="image/webp" srcset="assets/img/colour-silver.webp"><img src="assets/img/colour-silver.jpg" alt="Long, sleek silver hair colour by Jeanné" width="900" height="1130" loading="lazy"></picture></figure>
         <figure class="g2"><picture><source type="image/webp" srcset="assets/img/colour-roots.webp"><img src="assets/img/colour-roots.jpg" alt="Icy blonde with a soft dark root melt" width="900" height="1200" loading="lazy"></picture></figure>
         <figure class="g3"><picture><source type="image/webp" srcset="assets/img/colour-back.webp"><img src="assets/img/colour-back.jpg" alt="Textured silver-blonde layers from behind" width="900" height="1200" loading="lazy"></picture></figure>
@@ -374,7 +377,7 @@
   <section class="sec" aria-labelledby="faq-title">
     <div class="wrap faq">
       <div>
-        <h2 id="faq-title">Questions, answered</h2>
+        <h2 data-reveal id="faq-title">Questions, answered</h2>
         <p class="lede" style="margin-top:18px">Something else on your mind? <a class="link" href="https://wa.me/27832406113" target="_blank" rel="noopener">Message Jeanné privately</a>.</p>
       </div>
       <div>
@@ -389,11 +392,26 @@
     </div>
   </section>
 
+  <section class="closing" aria-labelledby="close-title">
+    <picture class="closing-bg">
+      <source type="image/webp" srcset="assets/img/closing.webp">
+      <img src="assets/img/closing.jpg" alt="" width="1536" height="864" loading="lazy">
+    </picture>
+    <div class="wrap">
+      <h2 id="close-title" data-reveal>You deserve to feel like yourself again.</h2>
+      <p data-reveal style="--i:1">No matter your age or stage of hair loss, there is a natural-looking solution. Let's find yours, privately.</p>
+      <div class="cta-row" data-reveal style="--i:2">
+        <a class="btn btn-primary" href="https://wa.me/27832406113?text=Hi%20Jeann%C3%A9%2C%20I%20would%20like%20to%20book%20a%20private%20consultation." target="_blank" rel="noopener"><i class="ph-light ph-whatsapp-logo" aria-hidden="true"></i>Book a consultation</a>
+        <a class="btn btn-ghost" href="tel:+27832406113"><i class="ph-light ph-phone" aria-hidden="true"></i>083 240 6113</a>
+      </div>
+    </div>
+  </section>
+
   <section class="sec band" id="visit" aria-labelledby="visit-title">
     <div class="wrap visit">
       <div>
-        <figure class="visit-photo"><picture><source type="image/webp" srcset="assets/img/salon.webp"><img src="assets/img/salon.jpg" alt="The Revéla reception with an illuminated lotus logo and orchid wall" width="1774" height="887" loading="lazy"></picture></figure>
-        <h2 id="visit-title" style="margin-bottom:24px">Visit the salon</h2>
+        <figure class="visit-photo" data-reveal="img"><picture><source type="image/webp" srcset="assets/img/salon.webp"><img src="assets/img/salon.jpg" alt="The Revéla reception with an illuminated lotus logo and orchid wall" width="1774" height="887" loading="lazy"></picture></figure>
+        <h2 data-reveal id="visit-title" style="margin-bottom:24px">Visit the salon</h2>
         <ul class="contact-list">
           <li><i class="ph-light ph-map-pin" aria-hidden="true" style="color:var(--orchid-soft);font-size:22px"></i><span><a href="https://www.google.com/maps/search/?api=1&amp;query=729+Verena+Drive+Faerie+Glen+Pretoria" target="_blank" rel="noopener">729 Verena Drive, Faerie Glen, Pretoria East</a><small>Private consultations by appointment</small></span></li>
           <li><i class="ph-light ph-phone" aria-hidden="true" style="color:var(--orchid-soft);font-size:22px"></i><span><a href="tel:+27832406113">083 240 6113</a><small>Call Jeanné directly</small></span></li>

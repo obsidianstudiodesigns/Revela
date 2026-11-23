@@ -91,6 +91,15 @@
     });
   }
 
+  /* Reveal on scroll */
+  var rev = document.querySelectorAll('[data-reveal]');
+  if ('IntersectionObserver' in window) {
+    var ro = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); ro.unobserve(en.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    rev.forEach(function (el) { ro.observe(el); });
+  } else { rev.forEach(function (el) { el.classList.add('in'); }); }
+
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 })();
