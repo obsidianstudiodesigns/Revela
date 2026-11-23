@@ -87,10 +87,10 @@ em.i{font-style:italic}
 .hero-name{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(3.8rem,11.5vw,10rem);line-height:.86;letter-spacing:.09em;padding:.3em 0 .04em .09em;text-transform:uppercase;color:var(--bone);text-shadow:0 8px 40px rgba(0,0,0,.35)}
 .hero-tag{font-family:var(--serif);font-style:italic;font-size:clamp(1.3rem,2.1vw,1.85rem);line-height:1.3;margin:14px 0 6px;color:var(--bone)}
 .hero-sub{color:#d9dbd2;font-size:clamp(.98rem,1.1vw,1.06rem);margin:0 0 34px}
-.socials{list-style:none;padding:0;margin:0;display:flex;gap:14px;justify-content:center}
-.socials a{width:54px;height:54px;border-radius:999px;display:grid;place-items:center;color:var(--bone);text-decoration:none;border:1px solid rgba(236,232,222,.5);background:rgba(14,38,33,.32);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);transition:background-color .3s var(--ease),border-color .3s var(--ease),transform .25s var(--ease)}
-.socials a:hover{background:var(--orchid);border-color:var(--orchid);transform:translateY(-2px)}
-.socials i{font-size:25px;line-height:1}
+.socials{list-style:none;padding:0;margin:0;display:flex;gap:clamp(24px,2.8vw,40px);justify-content:center;align-items:center}
+.socials a{display:grid;place-items:center;color:var(--bone);text-decoration:none;line-height:1;filter:drop-shadow(0 4px 14px rgba(0,0,0,.35));transition:color .3s var(--ease),transform .3s var(--ease)}
+.socials a:hover{color:var(--orchid-soft);transform:translateY(-2px) scale(1.05)}
+.socials i{font-size:clamp(52px,4.6vw,68px);line-height:1}
 .connect{font-family:var(--serif);font-style:italic;font-size:1.2rem;color:#d9dbd2;margin:16px 0 0}
 .hero h1{font-size:clamp(2.45rem,4.3vw,4.1rem);line-height:1.06;letter-spacing:-.02em;margin-bottom:28px}
 .hero h1 .line{display:block;padding-bottom:.06em}
@@ -388,8 +388,7 @@ body::after{content:"";position:fixed;inset:0;z-index:60;pointer-events:none;opa
   .hero-name{font-size:clamp(3.2rem,15.5vw,4.4rem);letter-spacing:.07em;padding-left:.07em}
   .hero-welcome{letter-spacing:.34em;padding-left:.34em}
   .hero-lotus{width:70px;margin-bottom:16px}
-  .socials{gap:12px}
-  .socials a{width:52px;height:52px}
+  .socials i{font-size:46px}
   h2{font-size:2.15rem;line-height:1.12}
   .statement blockquote{font-size:1.75rem;line-height:1.28}
   .sol-tab{font-size:1.5rem}
